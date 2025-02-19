@@ -1,0 +1,9 @@
+# The following content manages the containerized service.
+services:
+  fastapi-app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    restart: always
